@@ -328,12 +328,19 @@ footer {
 .footer-row {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 0 1rem;
+    gap: 1rem;
+    padding: 0.5rem;
 }
 
-.footer-social {
-    position: absolute;
-    right: 1rem;
+@media (min-width: 768px) {
+    .footer-row {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .footer-center {
+        max-width: 50%;
+    }
 }
