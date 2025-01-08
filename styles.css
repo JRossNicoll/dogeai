@@ -327,20 +327,20 @@ footer {
 /* Add new styles here */
 .footer-row {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
     align-items: center;
+    padding: 0.5rem 1rem;
     gap: 1rem;
-    padding: 0.5rem;
 }
 
-@media (min-width: 768px) {
-    .footer-row {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .footer-center {
-        max-width: 50%;
-    }
+.footer-center {
+    grid-column: 1 / -1;
+    text-align: center;
+    order: 1;
+}
+
+.footer-social {
+    order: 0;
 }
