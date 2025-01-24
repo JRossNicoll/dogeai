@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'English': {
             signIn: 'Sign In',
             seek: 'Seek',
-            announcement: 'ANA[LOGE] DOGE will be live shortly! Follow us on X for immediate updates!',
+            announcement: 'ANA[LOGE] ĐOGE will be live shortly! Follow us on X for immediate updates!',
             title: 'What would you like to know?',
             subtitle: 'Access trusted knowledge and real-time information instantly',
             placeholder: 'Ask anything...',
@@ -18,12 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
             privacy: 'Privacy',
             terms: 'Terms',
             cookies: 'Cookies',
-            footerText: 'ANA[LOGE] DOGE is a revolutionary AI platform. All rights are reserved. API requests please contact api@analoge.ai'
+            footerText: 'ANA[LOGE] ĐOGE is a revolutionary AI platform. All rights are reserved. API requests please contact api@analoge.ai'
         },
         'French': {
             signIn: 'Connexion',
             seek: 'Rechercher',
-            announcement: 'ANA[LOGE] DOGE sera bientôt en ligne ! Suivez-nous sur X pour des mises à jour immédiates !',
+            announcement: 'ANA[LOGE] ĐOGE sera bientôt en ligne ! Suivez-nous sur X pour des mises à jour immédiates !',
             title: 'Que voulez-vous savoir ?',
             subtitle: 'Accédez instantanément à des connaissances fiables',
             placeholder: 'Posez votre question...',
@@ -38,12 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
             privacy: 'Confidentialité',
             terms: 'Conditions',
             cookies: 'Cookies',
-            footerText: 'ANA[LOGE] DOGE est une plateforme IA révolutionnaire. Tous droits réservés. Pour les demandes d\'API, contactez api@analoge.ai'
+            footerText: 'ANA[LOGE] ĐOGE est une plateforme IA révolutionnaire. Tous droits réservés. Pour les demandes d\'API, contactez api@analoge.ai'
         },
         'German': {
             signIn: 'Anmelden',
             seek: 'Suchen',
-            announcement: 'ANA[LOGE] DOGE wird in Kürze live gehen! Folgen Sie uns auf X für sofortige Updates!',
+            announcement: 'ANA[LOGE] ĐOGE wird in Kürze live gehen! Folgen Sie uns auf X für sofortige Updates!',
             title: 'Was möchten Sie wissen?',
             subtitle: 'Greifen Sie sofort auf vertrauenswürdiges Wissen zu',
             placeholder: 'Fragen Sie alles...',
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             privacy: 'Datenschutz',
             terms: 'Bedingungen',
             cookies: 'Cookies',
-            footerText: 'ANA[LOGE] DOGE ist eine revolutionäre KI-Plattform. Alle Rechte vorbehalten. API-Anfragen bitte an api@analoge.ai'
+            footerText: 'ANA[LOGE] ĐOGE ist eine revolutionäre KI-Plattform. Alle Rechte vorbehalten. API-Anfragen bitte an api@analoge.ai'
         }
     };
 
