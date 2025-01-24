@@ -8,32 +8,6 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Modal -->
-    <div id="manifestoModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="manifesto-text">
-                <p>We are Dogecoin, the accidental crypto-movement that makes people smile.</p>
-                <p>We are developing a currency for the people, and we strive to do only good everyday. Through this work we have come to value:</p>
-                <p>Being <strong>useful</strong>, we value <em>utility</em> over <em>technical brilliance</em>.</p>
-                <p>Being <strong>personable</strong>, we value <em>individuals and interactions</em> over <em>profit-driven economics</em>.</p>
-                <p>Being <strong>welcoming</strong>, we value <em>collaboration and trust</em> over <em>competition and exclusivity</em>.</p>
-                <p>Being <strong>reliable</strong>, we value <em>working solutions</em> over <em>speed of delivery</em>.</p>
-                <p>That is, while there is value in the items on the right, we value the items on the left more.</p>
-                <p><strong>Signatories,</strong></p>
-                <ul>
-                    <li><strong>– Billy Markus</strong></li>
-                    <li><strong>– Gary Lachance</strong></li>
-                    <li><strong>– Jens Wiechers</strong></li>
-                    <li><strong>– Max Keller</strong></li>
-                    <li><strong>– Michi Lumin</strong></li>
-                    <li><strong>– Ross Nicoll</strong></li>
-                    <li><strong>– Timothy Stebbing</strong></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
     <div class="ambient-glow">
         <div class="glow-1"></div>
         <div class="glow-2"></div>
@@ -41,12 +15,76 @@
 
     <nav>
         <div class="logo">ANA[LOGE] ĐOGE</div>
-        <button id="manifestoBtn" class="manifesto-btn">Manifesto</button>
         <div class="nav-right">
             <button class="footer-link" data-translate="signIn">Sign In</button>
             <button class="nav-button" data-translate="seek">Seek</button>
         </div>
     </nav>
-    <!-- Rest of your HTML remains the same -->
+
+    <main>
+        <div class="announcement">
+            <div class="banner">
+                <div class="banner-glow"></div>
+                <span class="banner-text" data-translate="announcement">
+                    ANA[LOGE] ĐOGE will be live shortly! Follow us on X for immediate updates!
+                </span>
+            </div>
+        </div>
+
+        <h1 data-translate="title">What would you like to know?</h1>
+        <p class="subtitle" data-translate="subtitle">Access trusted knowledge and real-time information instantly</p>
+
+        <form class="search-form">
+            <div class="search-glow"></div>
+            <input type="text" class="search-input" data-translate="placeholder" placeholder="Ask anything...">
+        </form>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3 class="feature-title" data-translate="feature1Title">Smart Queries</h3>
+                <p class="feature-description" data-translate="feature1Desc">Real-time accurate answers</p>
+            </div>
+            <div class="feature-card">
+                <h3 class="feature-title" data-translate="feature2Title">Visual AI</h3>
+                <p class="feature-description" data-translate="feature2Desc">Advanced image analysis</p>
+            </div>
+            <div class="feature-card">
+                <h3 class="feature-title" data-translate="feature3Title">8 Languages</h3>
+                <p class="feature-description" data-translate="feature3Desc">Global accessibility</p>
+            </div>
+            <div class="feature-card">
+                <h3 class="feature-title" data-translate="feature4Title">Privacy First</h3>
+                <p class="feature-description" data-translate="feature4Desc">Secure & private</p>
+            </div>
+        </div>
+
+        <div class="languages">
+            <button class="language-btn active">English</button>
+            <button class="language-btn">French</button>
+            <button class="language-btn">German</button>
+            <button class="language-btn">Japanese</button>
+            <button class="language-btn">Korean</button>
+            <button class="language-btn">Simplified Chinese</button>
+            <button class="language-btn">Spanish</button>
+            <button class="language-btn">Hindi</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <a href="#" class="footer-link" data-translate="privacy">Privacy</a>
+                    <a href="#" class="footer-link" data-translate="terms">Terms</a>
+                </div>
+                <div class="footer-center" data-translate="footerText">
+                    ANA[LOGE] ĐOGE is a revolutionary AI platform. All rights are reserved. API requests please contact api@analoge.ai
+                </div>
+                <button class="footer-link" data-translate="cookies">Cookies</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
