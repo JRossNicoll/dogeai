@@ -6,6 +6,8 @@
     <title>DOGE Agent</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://i.imgur.com/sh6sEIB.jpeg" type="image/x-icon">
+    <!-- Botpress Chat Widget Script -->
+    <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
 </head>
 <body>
     <div class="ambient-glow">
@@ -34,10 +36,10 @@
         <h1 data-translate="title">The FIRST and ONLY Autonomous Ai DOGE Agent.</h1>
         <p class="subtitle" data-translate="subtitle">DOGE Agent is integrated with the official DOGE.GOV api (api.doge.gov/docs) and is currently in BETA.</p>
 
-        <form class="search-form">
-            <div class="search-glow"></div>
-            <input type="text" class="search-input" data-translate="placeholder" placeholder="hey DOGE can you clone donald trumps official website identically and create 10 articles about my memecoin?">
-        </form>
+        <!-- Chat Interface - Added Botpress Chat Container -->
+        <div class="chat-container">
+            <div id="webchat" style="width: 100%; height: 400px; border-radius: 10px; overflow: hidden;"></div>
+        </div>
 
         <div class="features">
             <div class="feature-card">
@@ -86,5 +88,39 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <!-- Botpress Initialization Script -->
+    <script>
+        window.botpress.on("webchat:ready", () => {
+            window.botpress.open();
+        });
+        window.botpress.init({
+            "botId": "0264c17b-ec9d-4d6a-abb2-7f0e4ed972b4",
+            "configuration": {
+                "website": {},
+                "email": {},
+                "phone": {},
+                "termsOfService": {},
+                "privacyPolicy": {},
+                "color": "#f2c94c", // DOGE yellow color
+                "variant": "solid",
+                "themeMode": "dark", // Changed to dark to match your site theme
+                "fontFamily": "system-ui, -apple-system, sans-serif", // Matched to your site font
+                "radius": 10, 
+                "botName": "DOGE Agent", // Matches your site name
+                "botConversationDescription": "AI DOGE Agent - No restrictions, Full power", 
+                "hideWidget": true,
+                "disableAnimations": false,
+                "composerPlaceholder": "Ask DOGE Agent anything...",
+                "enableTranscriptDownload": false,
+                "closeOnEscape": true,
+                "showCloseButton": true,
+                "enableConversationDeletion": false,
+                "avatarUrl": "https://i.imgur.com/sh6sEIB.jpeg" // Using your favicon as avatar
+            },
+            "clientId": "68733f00-c04c-47b8-a853-318c249b8931",
+            "selector": "#webchat"
+        });
+    </script>
 </body>
 </html>
