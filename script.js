@@ -92,3 +92,34 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
     });
 });
+
+// AI Chat Logic for main input field
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.querySelector(".search-input");
+  const responseBox = document.getElementById("chat-response");
+
+  searchInput.addEventListener("keydown", async (e) => {
+    if (e.key === "Enter") {
+      const message = searchInput.value.trim();
+      if (!message) return;
+
+      responseBox.textContent = "Thinking...";
+      searchInput.disabled = true;
+
+      try {
+        const res = await fetch("https://your-backend-url.com/api/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message }),
+        });
+
+        const data = await res.json();
+        responseBox.textContent = data.reply || "No response from AI.";
+      } catch (err) {
+        responseBox.textContent = "Error talking to AI.";
+      } finally {
+        searchInput.disabled = false;
+      }
+    }
+  });
+});
