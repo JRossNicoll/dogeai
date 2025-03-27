@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
       searchInput.disabled = true;
 
       try {
-        const res = await fetch("https://your-backend-url.com/api/chat", {
+        const res = await fetch("https://dogeapi-backend-git-main-ross-projects-7c9ae996.vercel.app/api/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ message }),
